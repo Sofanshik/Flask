@@ -2,12 +2,36 @@ from flask import Flask, render_template, request, abort
 app = Flask(__name__)
 
 @app.route('/')
-def index():
+def first_index():
     return render_template('tests.html')
 
 @app.route('/Flask')
-def index():
-    return render_template('.html')
+def second_index():
+    return render_template('Choose.html')
+
+@app.route('/SS.html')
+def third_index():
+    return render_template('SS.html')
+
+@app.route('/IntS.html')
+def fours_index():
+    return render_template('IntS.html')
+
+@app.route('/MyS.html')
+def fifth_index():
+    return render_template('MyS.html')
+
+@app.route('/IntSorted.py')
+def sorte():
+    return render_template('IntSorted.py')
+
+@app.route('/Sorted.py')
+def sor():
+    return render_template('Sorted.py')
+
+@app.route('/Sortedmy.py')
+def sote():
+    return render_template('Sortedmy.py')
 
 
 @app.route('/user/<name>')
