@@ -5,6 +5,11 @@ app = Flask(__name__)
 def index():
     return render_template('tests.html')
 
+@app.route('/Flask')
+def index():
+    return render_template('.html')
+
+
 @app.route('/user/<name>')
 @app.route('/user/')
 
