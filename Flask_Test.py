@@ -5,7 +5,7 @@ app = Flask(__name__)
 def first_index():
     return render_template('tests.html')
 
-@app.route('/Flask')
+@app.route('/Choose.html')
 def second_index():
     return render_template('Choose.html')
 
