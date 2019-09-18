@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Sorted function</title>
-    <link href="CSS.css" rel="stylesheet">
+
+     <link href="config.json">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css')}}">
+
 </head>
 <body>
     <div>
-    <p><h3>Choose function which you want to use!</h3></p>
-    <form action="SS.html">
-        <input type="submit" value="Standard function!">
-    </form>
-
-    <form action="IntS.html">
-        <input type="submit" value="The Fastest function!">
-    </form>
-
-    <form action="MyS.html">
-        <input type="submit" value="Sorted function by Nikita!">
-    </form>
+        <p><h1>Choose function which you want to use!</h1></p>
     </div>
+
+    <hr>
+    
+    <div class="container-fluid">
+        <p><a href="/SS.html" class="btn btn-info btn-lg">Standard function!</a></p>
+        <p><a href="/IntS.html" class="btn btn-info btn-lg">The Fastest function!</a></p>
+        <p><a href="/MyS.html" class="btn btn-info btn-lg">Sorted function by Nikita!</a></p>
+    </div>
+
 </body>
 </html>

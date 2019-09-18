@@ -3,32 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Standard sorted function!</title>
-    <link href="CSS.css" rel="stylesheet">
+
+    <link href="config.json">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css')}}">
+
 </head>
 <body>
-<div>
-    <p><h3>Third standard function by Python!</h3></p>
-    <form action="Sorted.py">
-        <input type="submit" value="Code!" title="If you want see code!">
-    </form>
-</div>
-<div>
-    <p><h4>Average lead time: ~0.125 or ~0.0937!</h4></p>
-    <p><h4>Average time of the first list: ~0.053125</h4></p>
-    <p><h4>Average time of the Second list: ~0.05</h4></p>
-    <p><h4>Average time of the Third list: ~0.05</h4></p>
-    <p><h4>Average time of the Fours list: ~0.14375</h4></p>
-</div>
-<div>
-    <p><h4>First list = [10,9,8,7,6,5,4,3,2,1,0]</h4></p>
-    <p><h4>Second list = [4,2,6,5,3,1,10,7,9,8]</h4></p>
-    <p><h4>Third list = [1,2,3,4,5,6,7,8,9,10]</h4></p>
-    <p><h4>Fours list = [1,2,3,4,5]</h4></p>
-</div>
-<div id="footer">
-    <form action="Choose.html">
-        <input type="submit" value="Back!" title="If you want come back...">
-    </form>
-</div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-9">
+                <p><h3>Third standard function by Python!</h3></p>
+            </div>
+
+            <div class="col-md-3">
+                <a href="/Choose.html" class="btn btn-info" role="button" title="If you want come back...">Home! <i class="glyphicon glyphicon-home"></i></a>
+                <a href="Sortedmy.py" class="btn btn-info" role="button" title="If you want see code!">Code! <i class="glyphicon glyphicon-list"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="aver_time">
+                    <table class="tab">
+                        <tr class="tir">
+                            <td><p><h4>Average lead time: </h4></p></td>
+                            <td><p><h4> ~0.125 or ~0.0937!</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Average time of the First list: </h4></p></td>
+                            <td><p><h4> ~0.053125</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Average time of the Second list: </h4></p></td>
+                            <td><p><h4> ~0.05</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Average time of the Third list: </h4></p></td>
+                            <td><p><h4> ~0.05</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Average time of the Fours list: </h4></p></td>
+                            <td><p><h4> ~0.14375</h4></p></td
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="aver_time_list">
+                    <table class="tab">
+                        <tr class="tir">
+                            <td><p><h4>First list: </h4></p></td>
+                            <td><p><h4>~[10,9,8,7,6,5,4,3,2,1,0]</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Second list: </h4></p></td>
+                            <td><p><h4>~[4,2,6,5,3,1,10,7,9,8]</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Third list: </h4></p></td>
+                            <td><p><h4>~[1,2,3,4,5,6,7,8,9,10]</h4></p></td
+                        </tr>
+                        <tr class="tir">
+                            <td><p><h4>Fours list: </h4></p></td>
+                            <td><p><h4>~[1,2,3,4,5]</h4></p></td
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

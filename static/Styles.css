@@ -1,0 +1,28 @@
+input {
+    width: 15%;
+    margin: 7px 40%;
+    background-color: #3CBC8D;
+    color: white;
+}
+
+hr{
+    background-color: white;
+    height: 1px;
+}
+
+div {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+tr.tir{
+    color: black;
+    text-align: left;
+}
+
+a.btn-lg{
+    text-align: center;
+}
