@@ -84,6 +84,21 @@
             </div>
         </div>
     </div>
+    <div>
+        <form action="SS.html" method="post">
+            <center><input type="text" value="" name="numbers"></center>
+            <center><button type="submit" class="btn">Send</button></center>
+        </form>
+
+        {%if result %}
+            <center><h3>Your result is: {{result}}</h3></center>
+
+        {% else %}
+            <center><h3>No data!!!</h3></center>
+
+        {% endif %}
+
+    </div>
 
 </body>
 </html>

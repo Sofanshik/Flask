@@ -2,11 +2,6 @@ import time
 
 print(time.process_time())
 
-lst = [10,9,8,7,6,5,4,3,2,1,0]
-lt = [4,2,6,5,3,1,10,7,9,8]
-st = [1,2,3,4,5,6,7,8,9,10]
-ls = [1,2,3,4,5]
-
 #FIRST SORT
 def sorte_my(num):
     for i in range(len(num)):
@@ -15,10 +10,8 @@ def sorte_my(num):
             if num[k] < num[l]:
                 l = k
         swap(num, l, i)
-    return num
+    return "List that was sorted: ", num, "The time in which the function sorted the numbers: ", time.process_time()
 
 def swap(v,x,y):
     v[x], v[y] = v[y], v[x]
 
-
-print(lst, ls, st, lt)

@@ -34,23 +34,23 @@
                         <table class="tab">
                             <tr class="tir">
                                 <td><p><h4>Average lead time: </h4></p></td>
-                                <td><p><h4> ~0.625 or 0.0781</h4></p></td
+                                <td><p><h4> ~0.625 or 0.0781</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Average time of the First list: </h4></p></td>
-                                <td><p><h4> ~0.071875</h4></p></td
+                                <td><p><h4> ~0.071875</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Average time of the Second list: </h4></p></td>
-                                <td><p><h4> ~0.0.234375</h4></p></td
+                                <td><p><h4> ~0.0.234375</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Average time of the Third list: </h4></p></td>
-                                <td><p><h4> ~0.134375</h4></p></td
+                                <td><p><h4> ~0.134375</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Average time of the Fours list: </h4></p></td>
-                                <td><p><h4> ~0.0625</h4></p></td
+                                <td><p><h4> ~0.0625</h4></p></td>
                             </tr>
                         </table>
                     </div>
@@ -62,25 +62,40 @@
                         <table class="tab">
                             <tr class="tir">
                                 <td><p><h4>First list: </h4></p></td>
-                                <td><p><h4>~[10,9,8,7,6,5,4,3,2,1,0]</h4></p></td
+                                <td><p><h4>~[10,9,8,7,6,5,4,3,2,1,0]</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Second list: </h4></p></td>
-                                <td><p><h4>~[4,2,6,5,3,1,10,7,9,8]</h4></p></td
+                                <td><p><h4>~[4,2,6,5,3,1,10,7,9,8]</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Third list: </h4></p></td>
-                                <td><p><h4>~[1,2,3,4,5,6,7,8,9,10]</h4></p></td
+                                <td><p><h4>~[1,2,3,4,5,6,7,8,9,10]</h4></p></td>
                             </tr>
                             <tr class="tir">
                                 <td><p><h4>Fours list: </h4></p></td>
-                                <td><p><h4>~[1,2,3,4,5]</h4></p></td
+                                <td><p><h4>~[1,2,3,4,5]</h4></p></td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
+    <div>
+        <form action="IntS.html" method="post">
+            <center><input type="text" value="" name="numbers"></center>
+            <center><button type="submit" class="btn">Send</button></center>
+        </form>
+
+        {%if result %}
+            <center><h3>Your result is: {{result}}</h3></center>
+
+        {% else %}
+            <center><h3>No data!!!</h3></center>
+
+        {% endif %}
+
+    </div>
 
 </body>
 </html>
